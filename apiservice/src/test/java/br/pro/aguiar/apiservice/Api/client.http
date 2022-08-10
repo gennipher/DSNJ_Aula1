@@ -1,0 +1,77 @@
+GET http://localhost:8081/produtos
+
+###
+
+GET  http://localhost:8081/produtos/1
+
+###
+
+POST http://localhost:8081/produtos
+Content-Type: application/json
+
+{
+    "nome": "Lápis",
+    "marca": "Faber Castel"
+}
+
+###
+
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+    "marca": "Dell"
+}
+###
+
+PATCH http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "Notebook"
+}
+
+###
+
+DELETE http://localhost:8080/produtos/1
+###
+
+GET http://localhost:8080/usuarios
+###
+
+GET http://localhost:8080/usuarios/1
+###
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Thiago",
+    "email": "thi@go.com",
+    "senha": "654321",
+    "perfil": "admin"
+}
+
+###
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Thiago",
+    "email": "thi@go.com"
+}
+###
+
+PUT http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Thiago",
+    "email": "thi@go.com",
+    "senha": "654321",
+    "perfil": "admin"
+}
+###
+
+DELETE http://localhost:8080/usuarios/1
