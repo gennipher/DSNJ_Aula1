@@ -30,9 +30,30 @@ public class ApiclientApplication
 	
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Lista de Produtos");
+
+		/* System.out.println("Lista de Produtos");
+		List<Produto> produtos = produtosService.listar();
+		produtos.forEach(System.out::println); */
+
+		/* System.out.println("Exibir Produtos");
+		System.out.println(produtosService.exibir((long) 1)); */
+
+		/* System.out.println("Inserir Produtos");
+		Produto produto = new Produto();
+		produto.setNome("nome");
+		produto.setMarca("marca");
+		produtosService.inserir(produto);
+		List<Produto> produtos = produtosService.listar();
+		produtos.forEach(System.out::println); */
+
+		System.out.println("Atualizar Produtos");
+		Produto produto = new Produto();
+		produto.setNome("nome");
+		produto.setMarca("marca");
+		produtosService.atualizar((long) 1, produto);
 		List<Produto> produtos = produtosService.listar();
 		produtos.forEach(System.out::println);
+
 	}
 
 }
